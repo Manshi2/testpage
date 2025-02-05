@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 
 <head>
@@ -17,430 +17,69 @@
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
     <link href="lib/animate/animate.min.css" rel="stylesheet">
     <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
-    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+     <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-
-    <!-- This is start of the Book Me Bob voucher assistant code -->
-    <!-- <script> -->
-    <!-- var BMB_Voucher_domain = 'https://vouchers.devtest.getaiva.com/'; -->
-    <!-- var BMB_Voucher_botHTMLPath = BMB_Voucher_domain; -->
-    <!-- var BMB_Voucher_head = document.getElementsByTagName('head')[0]; -->
-    <!-- var BMB_Voucher_script = document.createElement('script'); -->
-    <!-- BMB_Voucher_script.type = 'text/javascript'; -->
-    <!-- BMB_Voucher_script.src = BMB_Voucher_domain + 'voucherplugin.js'; -->
-    <!-- BMB_Voucher_head.appendChild(BMB_Voucher_script); -->
-    <!-- var BMB_Voucher_gid = '73574010-2f33-4b41-8b8a-09d18b025a56'; -->
-    <!-- var BMB_Voucher_iid = '4405ff2e-82e0-427a-bd6a-01309d4a3dc9'; -->
-    <!-- var BMB_Voucher_pid = 'e655dab2-987b-4683-ad9b-599814b414b6'; -->
-    <!-- </script> -->
-    <!-- This is end of the Book Me Bob voucher assistant code -->
     <!-- This is start of the Myma.ai AI Digital Assistant code -->
-    <!-- <script> -->
-    <!-- var BMB_MESSENGER_domain = 'https://mymamessengerdev.z13.web.core.windows.net/'; -->
-    <!-- var BMB_messengerHTMLPath = BMB_MESSENGER_domain + 'index.html';  -->
-    <!-- var BMB_MESSENGER_head = document.getElementsByTagName('head')[0]; -->
-    <!-- var BMB_MESSENGER_script = document.createElement('script');   -->
-    <!-- BMB_MESSENGER_script.type = 'text/javascript'; -->
-    <!-- BMB_MESSENGER_script.src = BMB_MESSENGER_domain + 'msgplugin.js'; -->
-    <!-- BMB_MESSENGER_head.appendChild(BMB_MESSENGER_script); -->
-    <!-- var BMB_MESSENGER_gid = '73574010-2f33-4b41-8b8a-09d18b025a56'; -->
-    <!-- var BMB_MESSENGER_iid = '201c4426-dd98-4d5d-92e4-a55a7c046cc2'; -->
-    <!-- var BMB_MESSENGER_pid = ''; -->
-    <!-- </script> -->
-    <!-- This is end of the Myma.ai Help Ceter digital assistant code -->
-    <!-- This is start of the Myma.ai AI Digital Assistant code -->
-    <!-- <script> -->
-    <!-- var BMB_MESSENGER_domain = 'http://localhost:1000/'; -->
-    <!-- var BMB_messengerHTMLPath = BMB_MESSENGER_domain + 'index.html';  -->
-    <!-- var BMB_MESSENGER_head = document.getElementsByTagName('head')[0]; -->
-    <!-- var BMB_MESSENGER_script = document.createElement('script');   -->
-    <!-- BMB_MESSENGER_script.type = 'text/javascript'; -->
-    <!-- BMB_MESSENGER_script.src = BMB_MESSENGER_domain + 'msgplugin.js'; -->
-    <!-- BMB_MESSENGER_head.appendChild(BMB_MESSENGER_script); -->
-    <!-- var BMB_MESSENGER_gid = '73574010-2f33-4b41-8b8a-09d18b025a56'; -->
-    <!-- var BMB_MESSENGER_iid = '34fecb93-a0d5-43ce-8fdd-d04e110af4e2'; -->
-    <!-- var BMB_MESSENGER_pid = ''; -->
-    <!-- </script> -->
-    <!-- This is end of the Myma.ai Help Ceter digital assistant code -->
-    <!-- This is start of the Myma.ai AI Digital Assistant code -->
-    
+    <!-- <script>
+        var BMB_BOT_domain = 'http://localhost:3001/';
+        var BMB_BOT_botHTMLPath = BMB_BOT_domain + 'index.html';
+        var BMB_BOT_head = document.getElementsByTagName('head')[0];
+        var BMB_BOT_script = document.createElement('script');
+        BMB_BOT_script.type = 'text/javascript';
+        BMB_BOT_script.src = BMB_BOT_domain + 'chatplugin.js';
+        BMB_BOT_head.appendChild(BMB_BOT_script);
+        var BMB_BOT_gid = '73574010-2f33-4b41-8b8a-09d18b025a56';
+        var BMB_BOT_iid = '2ddcb06d-8a79-46dc-ab38-367080ca3f78';
+        var BMB_BOT_pid = '';
+        </script> -->
+        <script>
 
-    <script>
-
-        function openMessenger() {
-        
-            if (!document.getElementById('messengeriframe')) {
-                var head = document.getElementsByTagName('head')[0];
-                
-                var scriptTag = document.createElement('script');
-                scriptTag.type = 'text/javascript';
-                scriptTag.textContent = `
-                      var BMB_MESSENGER_domain = 'http://localhost:1000/';
-    var BMB_messengerHTMLPath = BMB_MESSENGER_domain + 'index.html';
-    var BMB_MESSENGER_head = document.getElementsByTagName('head')[0];
-    var BMB_MESSENGER_script = document.createElement('script');
-    BMB_MESSENGER_script.type = 'text/javascript';
-    BMB_MESSENGER_script.src = BMB_MESSENGER_domain + 'msgplugin.js';
-    BMB_MESSENGER_head.appendChild(BMB_MESSENGER_script);
-    var BMB_MESSENGER_gid = '73574010-2f33-4b41-8b8a-09d18b025a56';
-    var BMB_MESSENGER_iid = '0cfb30f2-cfba-4161-9ae8-a25ec3ddf77d'; 
-                    var BMB_MESSENGER_pid = '';
-                    var BMB_MESSENGER_buttonscript = true;
-           
-                   
-
-                `;
-                
-                head.appendChild(scriptTag);
-            } else {
+            function openMessenger() {
+            
+                if (!document.getElementById('messengeriframe')) {
+                    var head = document.getElementsByTagName('head')[0];
+                    
+                    var scriptTag = document.createElement('script');
+                    scriptTag.type = 'text/javascript';
+                    scriptTag.textContent = `
+                        var BMB_MESSENGER_domain = 'https://messenger.devtest.myma.ai/';
+                        var BMB_messengerHTMLPath = BMB_MESSENGER_domain + 'index.html'; 
+                        var BMB_MESSENGER_head = document.getElementsByTagName('head')[0];
+                        var BMB_MESSENGER_script = document.createElement('script');  
+                        BMB_MESSENGER_script.type = 'text/javascript'; 
+                        BMB_MESSENGER_script.src = BMB_MESSENGER_domain + 'msgplugin.js'; 
+                        BMB_MESSENGER_head.appendChild(BMB_MESSENGER_script); 
+                        var BMB_MESSENGER_gid = '73574010-2f33-4b41-8b8a-09d18b025a56'; 
+                        var BMB_MESSENGER_iid = '0cfb30f2-cfba-4161-9ae8-a25ec3ddf77d'; 
+                        var BMB_MESSENGER_pid = '';
+                        var BMB_MESSENGER_buttonscript = true;
                
-                document.getElementById("messengeriframe").contentWindow.postMessage("msgwindowOpened", "*");
+                       
+    
+                    `;
+                    
+                    head.appendChild(scriptTag);
+                } else {
+                   
+                    document.getElementById("messengeriframe").contentWindow.postMessage("msgwindowOpened", "*");
+                }
             }
-        }
-        
-    </script>
-
- 
-   
+            
+        </script>
+    
+    <!-- This is end of the Myma.ai Help Ceter digital assistant code -->
 </head>
 
 <body>
 
-
-    <!-- Navigation Bar starts---->
-
-    <nav class="navbar navbar-expand-md navbar-dark navbar-style">
-        <div class="container">
-            <!-- Brand -->
-            <a class="navbar-brand" href="index.html"><img src="img/logo.png"></a>
-
-            <!-- Toggler/collapsibe Button -->
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <!-- Navbar links -->
-            <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="about_us.html">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Career</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="services.html">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact_us.html">Contact Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <button class="chat-btn-container" onclick="openMessenger()">Chat</button>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Navigation bar Ends---->
-
-    <div class="content">
-
-        <!-- Banner Starts---->
-
-        <section id="intro" class="clearfix">
-            <div class="container">
-
-                <div class="intro-img">
-                    <img src="img/intro-img.svg" alt="" class="img-fluid">
-                </div>
-
-                <div class="intro-info">
-                    <!--                    <h2>We provide<br><span>solutions</span><br>for your business!</h2>-->
-                    <h2 class="wow fadeInUp">IT Solutions for your company</h2>
-                    <p class="wow fadeInUp subtext subteststtyl" data-wow-delay="0.2s"><span>50+</span> Projects, <span>
-                            150+ </span> World-wide Clients,</p>
-                    <p class="wow fadeInUp subtext subteststtyl" data-wow-delay="0.2s"><span> 10+ </span> Expert-Level
-                        Talents, <span> 60+ </span> High-Rated Credible Reviews. Trusted Partner Since 2019</p>
-                    <div>
-                        <a class="btn-get-started scrollto wow fadeInUp" data-wow-delay="0.4s">Learn More</a>
-
-                    </div>
-                </div>
-
-            </div>
-        </section><!-- #intdro -->
-        <!-- <iframe frameborder="0" style="bottom: 0; right: 0; margin: 0; z-index: 2000001;height:630px;width:390px;" id="messengeriframe" src="http://localhost:1000/index.html?location=file%3A%2F%2F%2FC%3A%2FUsers%2Fmansh%2FDownloads%2FA2rvIndex%25201%2FA2rvIndex%2Fabout_us.html&title=About%20Us&referrer=&iid=1ae35252-799c-41a0-b2a6-c086ccf68f25&gid=73574010-2f33-4b41-8b8a-09d18b025a56&mobile=false&position=right&preview=false&open=1&custom=1"></iframe> -->
-        <!-- Banner Ends---->
-        <!-- <iframe  title="Embedded Content"    data-src="" src="https://www-myma-ai.filesusr.com/html/bce317_f64ca352adea4306cf24e070085543ed.html"></iframe> -->
-       <!-- About US Starts-- -->
-        <section class="aboutus_sec">
-            <div class="container">
-                <div class="row ">
-                    <h2 class="heading wow fadeInUp text-center">About Us (English Page)</h2>
-                    <p class="subhead wow fadeInUp" data-wow-delay="0.2s">We help businesses move fast and grow
-                        confidently by building future ready softwares.</p>
-                    <p class="wow fadeInUp " data-wow-delay="0.4s">A2RV IT SOLUTIONS is an information technology
-                        company, providing customized software and internet solutions. A2RV IT SOLUTIONS is a team of
-                        dedicated and highly skilled software professionals focused on providing world class IT
-                        solutions. We offer a variety of services in the area of Software and Web development</p>
-                    <p class="wow fadeInUp " data-wow-delay="0.4s">We believe in utilizing technology to make things
-                        simple and easy to use. We also believe in thinking ahead and delivering products or services
-                        that can fit well with upcoming future technologies.</p>
-                    <p class="wow fadeInUp " data-wow-delay="0.4s">
-                        We see ourselves as the world’s leading Information Technology company providing quality
-                        solutions backed up by unbeatable customer service.</p>
-                    <p></p>
-                    <div class="btn-style"> <a class="btn-get-started scrollto wow fadeInUp" data-wow-delay="0.6s">Learn
-                            More</a></div>
-                </div>
-            </div>
-        </section>
-        <!-- About US Ends---->
-
-        <!-- Services section -->
-        <section id="what-we-do">
-            <div class="container">
-                <h2 class="section-title mb-2 wow fadeInUp ">What we do</h2>
-                <p class="text-center text-muted h5 wow fadeInUp" data-wow-delay="0.4s">Having and managing a correct
-                    marketing strategy is crucial in a fast moving market.</p>
-                <div class="row mt-5">
-                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
-                        <div class="card">
-                            <div class="card-block block-1">
-                                <h4 class="card-title">Web designing</h4>
-                                <p class="card-text">Website Design and Development, Web Content Management, Application
-                                    Development and Extranets.</p>
-                                <a href="javascript:void();" title="Read more" class="read-more">Read more<i
-                                        class="fa fa-angle-double-right ml-2"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
-                        <div class="card">
-                            <div class="card-block block-2">
-                                <h4 class="card-title">SEO</h4>
-                                <p class="card-text">Services India Search Engine Optimization India , SEO Services ,
-                                    Search Ranking Services, Link Building, ppC Campaign India.</p>
-                                <a href="javascript:void();" title="Read more" class="read-more">Read more<i
-                                        class="fa fa-angle-double-right ml-2"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
-                        <div class="card">
-                            <div class="card-block block-3">
-                                <h4 class="card-title">Digital Marketing</h4>
-                                <p class="card-text">Digital Marketing has become the essential demand of a business to
-                                    get its brand visibility in online and grab potential customers.</p>
-                                <a href="javascript:void();" title="Read more" class="read-more">Read more<i
-                                        class="fa fa-angle-double-right ml-2"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
-                        <div class="card">
-                            <div class="card-block block-4">
-                                <h4 class="card-title">Graphics designing</h4>
-                                <p class="card-text">Graphic Designs specializing in Logo Design, Website Design,
-                                    Brochure Design, Packaging Design, Social Media.</p>
-                                <a href="javascript:void();" title="Read more" class="read-more">Read more<i
-                                        class="fa fa-angle-double-right ml-2"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
-                        <div class="card">
-                            <div class="card-block block-5">
-                                <h4 class="card-title">Social Media</h4>
-                                <p class="card-text">Social media involves collaborating with industry influencers,
-                                    posting fresh, unique content and adopting various marketing trends to convince
-                                    people to take action.</p>
-                                <a href="javascript:void();" title="Read more" class="read-more">Read more<i
-                                        class="fa fa-angle-double-right ml-2"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
-                        <div class="card">
-                            <div class="card-block block-6">
-                                <h4 class="card-title">Content writing</h4>
-                                <p class="card-text">Strategic content creation to power your business’s online presence
-                                    on search engines and social media.</p>
-                                <a href="javascript:void();" title="Read more" class="read-more">Read more<i
-                                        class="fa fa-angle-double-right ml-2"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- /Services section -->
-
-        <!-- Clients Starts---->
-        <section class="clients_sec">
-            <div class="container">
-                <h2 class="heading wow fadeInUp">Our Prestigious Clients</h2>
-                <section class="customer-logos slider">
-                    <div class="slide"><img
-                            src="https://image.freepik.com/free-vector/luxury-letter-e-logo-design_1017-8903.jpg"></div>
-                    <div class="slide"><img
-                            src="https://image.freepik.com/free-vector/football-logo-background_1195-244.jpg"></div>
-                    <div class="slide"><img src="https://image.freepik.com/free-vector/3d-box-logo_1103-876.jpg"></div>
-                    <div class="slide"><img src="https://image.freepik.com/free-vector/blue-tech-logo_1103-822.jpg">
-                    </div>
-                    <div class="slide"><img
-                            src="https://image.freepik.com/free-vector/colors-curl-logo-template_23-2147536125.jpg">
-                    </div>
-                    <div class="slide"><img
-                            src="https://image.freepik.com/free-vector/abstract-cross-logo_23-2147536124.jpg"></div>
-                    <div class="slide"><img
-                            src="https://image.freepik.com/free-vector/football-logo-background_1195-244.jpg"></div>
-                    <div class="slide"><img
-                            src="https://image.freepik.com/free-vector/background-of-spots-halftone_1035-3847.jpg">
-                    </div>
-                    <div class="slide"><img
-                            src="https://image.freepik.com/free-vector/retro-label-on-rustic-background_82147503374.jpg">
-                    </div>
-                </section>
-
-            </div>
-        </section>
-        <!-- Clients Ends---->
-
-
-        <!-- Testimonials starts--->
-        <section id="testimonials" class="section-bg">
-            <div class="container">
-
-                <h2 class="heading wow fadeInUp">Words of Appreciation</h2>
-
-                <div class="row justify-content-center">
-                    <div class="col-md-8">
-
-                        <div class="owl-carousel testimonials-carousel wow fadeInUp">
-
-
-
-                            <div class="testimonial-item">
-                                <img src="img/testimonial-3.jpg" class="testimonial-img" alt="">
-                                <div class="textblock">
-                                    <h3>Jena Karlis</h3>
-                                    <h4>Store Owner</h4>
-                                    <p>
-                                        "I am impressed with the workability,commitment and quality of the team that
-                                        'A2RV IT Solutions' has shown towards our assignments. If I had to do it all
-                                        over again, I would select 'A2RV IT Solutions' as our outsourcing provider
-                                        again. ”
-
-
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div class="testimonial-item">
-                                <img src="img/testimonial-4.jpg" class="testimonial-img" alt="">
-                                <div class="textblock">
-                                    <h3>Matt Brandon</h3>
-                                    <h4>Freelancer</h4>
-                                    <p>
-                                        My new site created by 'A2RV IT Solutions' just launched. They’ve done a great
-                                        job of creating exactly what I wanted. Easy to work with and very responsive.
-                                        They met all of my expectations and had a lot of insight regarding marketing
-                                        tools I didn’t know existed.
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div class="testimonial-item">
-                                <img src="img/testimonial-5.jpg" class="testimonial-img" alt="">
-                                <div class="textblock">
-                                    <h3>John Larson</h3>
-                                    <h4>Entrepreneur</h4>
-                                    <p>
-                                        I would highly recommend 'A2RV IT Solutions'. They are great to work with.They
-                                        designed and developed my new website and traffic to our website has increased
-                                        thanks to their SEO program.
-                                    </p>
-                                </div>
-                            </div>
-
-                        </div>
-
-                    </div>
-                </div>
-                <button class="chat-btn-container" onclick="openMessenger()">Chat</button>
-
-            </div>
-        </section><!-- #testimonials -->
-
-        <!-- testimonials Ends--->
-        <!--==========================
-    Footer
-  ============================-->
-        <footer id="footer">
-            <div class="footer-top">
-                <div class="container">
-                    <div class="row">
-
-                        <div class="col-lg-4 col-md-4 footer-info">
-                            <img class="footerlogo" src="img/logowhite.png">
-                            <p>Software Product Development and Services Company in Chandigarh. Our expertise is
-                                Creating innovative, Effective, Simple and easy to use software, Web and mobile
-                                applicaitons and Custom Software development.</p>
-                        </div>
-
-                        <div class="col-lg-4 col-md-4 footer-links">
-                            <h4>Useful Links</h4>
-                            <ul>
-                                <li><a href="#">Home</a></li>
-                                <li><a href="#">About us</a></li>
-                                <li><a href="#">Services</a></li>
-                                <li><a href="#">Terms of service</a></li>
-                                <li><a href="#">Privacy policy</a></li>
-                            </ul>
-                        </div>
-
-                        <div class="col-lg-3 col-md-4 footer-contact">
-                            <h4>Contact Us</h4>
-                            <p>
-                                A2RV IT Solutions<br>
-                                #133A, Motia citi, Zirakpur
-                                <br>
-                                <strong>Phone:</strong> +918054415557<br>
-                                <strong>Email:</strong> Hr@a2rvitsolutions.com<br>
-                            </p>
-
-                            <div class="social-links">
-                                <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                                <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-                                <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
-                                <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
-                                <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
-                            </div>
-
-                        </div>
-
-
-
-                    </div>
-                </div>
-            </div>
-            <div class="copyright">
-                &copy; Copyright <strong>A2RV IT Solutions</strong>. All Rights Reserved
-            </div>
-
-    </div>
-    </footer><!-- #footer -->
-
-    </div>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/wow/wow.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="lib/lightbox/js/lightbox.min.js"></script>
-    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <h1>This is heading 1</h1>
+    <h2>This is heading 2</h2>
+    <h3>This is heading 3</h3>
+    <h4>This is heading 4</h4>
+    <h5>This is heading 5</h5>
+    <h6>This is heading 6</h6>
+    <button class="chat-btn-container" onclick="openMessenger()">Chat</button>
 </body>
 
 </html>
+
