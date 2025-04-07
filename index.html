@@ -37,7 +37,10 @@
 
             // Sending the event to Contentsquare
             if (window.hj) {
-                hj('trigger', 'chat_button_click');
+            hj('trigger', 'chat_button_click', {
+    pageName: 'Home Page',
+    userType: 'New Visitor'
+});
             }
         }
 </script>
