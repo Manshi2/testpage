@@ -50,6 +50,18 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     userType: 'New Visitor'
 });
             }
+                if (window.gtag) {
+                gtag('event', 'chat_button_click', {
+                    'event_category': 'Engagement',
+                    'event_label': 'Chat Button Clicked',
+                    'value': 1
+                });
+            }
+
+            // For Universal Analytics:
+            if (window.ga) {
+                ga('send', 'event', 'Engagement', 'click', 'Chat Button Clicked');
+            }
         }
 </script>
 <!-- This is start of the Myma.ai AI Digital Assistant code -->
