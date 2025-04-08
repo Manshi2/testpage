@@ -37,34 +37,44 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         r.appendChild(e);
   })(window, document, 'https://static.hj.contentsquare.net/c/csq-', '.js', 5353697);
      </script>
-   <script>
-    function openMessenger() {
-        console.log('button click', window.hj);
-        alert("Welcome! How can we assist you today?");
-
-        // Sending the event to Contentsquare
-        if (window.hj) {
-            hj('trigger', 'chat_button_click', {
-                pageName: 'Home Page',
-                userType: 'New Visitor'
-            });
+      <script>
+        // Function to track dynamic variables in Contentsquare
+        function trackDynamicVariables() {
+            if (window.hj) {
+                // Example dynamic variable: page name, user type
+                hj('trigger', 'chat_button_click', {
+                    pageName: 'Home Page', // dynamic value, can be fetched or passed as needed
+                    userType: 'New Visitor' // dynamic value based on user status
+                });
+                console.log('Dynamic variables sent to Contentsquare:', {
+                    pageName: 'Home Page',
+                    userType: 'New Visitor'
+                });
+            }
         }
 
-        // Sending the event to Google Analytics (GA4)
-        if (window.gtag) {
-            gtag('event', 'chat_button_click', {
-                'event_category': 'Engagement',
-                'event_label': 'Chat Button Clicked',
-                'value': 1
-            });
-        }
+        // Function triggered on Chat button click
+        function openMessenger() {
+            console.log('Chat button clicked!');
+            
+            // Trigger dynamic variable tracking for Contentsquare
+            trackDynamicVariables();
 
-        // Sending the event to Universal Analytics
-        if (window.ga) {
-            ga('send', 'event', 'Engagement', 'click', 'Chat Button Clicked');
+            // Sending event to Google Analytics (GA4)
+            if (window.gtag) {
+                gtag('event', 'chat_button_click', {
+                    'event_category': 'Engagement',
+                    'event_label': 'Chat Button Clicked',
+                    'value': 1
+                });
+            }
+
+            // Send event to Universal Analytics
+            if (window.ga) {
+                ga('send', 'event', 'Engagement', 'click', 'Chat Button Clicked');
+            }
         }
-    }
-</script>
+    </script>
 
 <!-- This is start of the Myma.ai AI Digital Assistant code -->
 <!--       <script>
