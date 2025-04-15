@@ -9,24 +9,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<!--     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script> -->
-<!--     <script src="js/custom.js"></script> -->
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,600&display=swap" rel="stylesheet">
-<!--     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="lib/animate/animate.min.css" rel="stylesheet">
-    <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
-    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet"> -->
     <link rel="stylesheet" href="css/style.css">
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-N68KFVDJ');</script>
-<!-- End Google Tag Manager -->
-     <script>
+    <!-- content square  script -->
+  <script>
     (function (c, s, q, u, a, r, e) {
         c.hj=c.hj||function(){(c.hj.q=c.hj.q||[]).push(arguments)};
         c._hjSettings = { hjid: a };
@@ -35,16 +21,17 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         e.async = true;
         e.src = q + c._hjSettings.hjid + u;
         r.appendChild(e);
-  })(window, document, 'https://static.hj.contentsquare.net/c/csq-', '.js', 5353697);
+     })(window, document, 'https://static.hj.contentsquare.net/c/csq-', '.js', 5353697);
      </script>
+    
       <script>
-        // Function to track dynamic variables in Contentsquare
+      
         function trackDynamicVariables() {
             if (window.hj) {
-                // Example dynamic variable: page name, user type
+              
                 hj('trigger', 'chat_button_click', {
-                    pageName: 'Home Page', // dynamic value, can be fetched or passed as needed
-                    userType: 'New Visitor' // dynamic value based on user status
+                    pageName: 'Home Page', 
+                    userType: 'New Visitor' 
                 });
                 console.log('Dynamic variables sent to Contentsquare:', {
                     pageName: 'Home Page',
@@ -53,46 +40,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             }
         }
 
-        // Function triggered on Chat button click
         function openMessenger() {
             console.log('Chat button clicked!');
-            
-            // Trigger dynamic variable tracking for Contentsquare
             trackDynamicVariables();
-
-            // Sending event to Google Analytics (GA4)
-            if (window.gtag) {
-                gtag('event', 'chat_button_click', {
-                    'event_category': 'Engagement',
-                    'event_label': 'Chat Button Clicked',
-                    'value': 1
-                });
-            }
-
-            // Send event to Universal Analytics
-            if (window.ga) {
-                ga('send', 'event', 'Engagement', 'click', 'Chat Button Clicked');
-            }
         }
     </script>
 
-<!-- This is start of the Myma.ai AI Digital Assistant code -->
-<!--       <script>
-      var BMB_MESSENGER_domain = 'https://messengerchat.loca.lt/';
-      var BMB_messengerHTMLPath = BMB_MESSENGER_domain + 'index.html'; 
-      var BMB_MESSENGER_head = document.getElementsByTagName('head')[0];
-      var BMB_MESSENGER_script = document.createElement('script');  
-      BMB_MESSENGER_script.type = 'text/javascript';
-      BMB_MESSENGER_script.src = BMB_MESSENGER_domain + 'msgplugin.js';
-      BMB_MESSENGER_head.appendChild(BMB_MESSENGER_script);
-         var BMB_MESSENGER_gid = '73574010-2f33-4b41-8b8a-09d18b025a56';
-    var BMB_MESSENGER_iid = '8127f208-ce2b-44c6-8146-48e391400968';
-      var BMB_MESSENGER_pid = '';
-    </script> -->
-  <!-- This is end of the Myma.ai Help Ceter digital assistant code -->
-
-  <!-- This is end of the Myma.ai Help Ceter digital assistant code -->
-    <!-- This is start of the Myma.ai AI Digital Assistant code -->
+<!-- iframe script -->
       <script>
       var BMB_MESSENGER_domain = 'https://messenger.devtest.myma.ai/';
       var BMB_messengerHTMLPath = BMB_MESSENGER_domain + 'index.html'; 
@@ -105,91 +59,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       var BMB_MESSENGER_iid = '8127f208-ce2b-44c6-8146-48e391400968';
       var BMB_MESSENGER_pid = '';
     </script>
-  <!-- This is end of the Myma.ai Help Ceter digital assistant code -->
-<!--     <script>      
-     var BMB_MESSENGER_domain = 'https://messengerchat.loca.lt/';    
-        var BMB_messengerHTMLPath = BMB_MESSENGER_domain + 'index.html';  
-             var BMB_MESSENGER_head = document.getElementsByTagName('head')[0];  
-                  var BMB_MESSENGER_script = document.createElement('script');  
-                         BMB_MESSENGER_script.type = 'text/javascript';   
-                             BMB_MESSENGER_script.src = BMB_MESSENGER_domain + 'msgplugin.js';  
-                                  BMB_MESSENGER_head.appendChild(BMB_MESSENGER_script); 
-                                  var BMB_MESSENGER_gid = '73574010-2f33-4b41-8b8a-09d18b025a56';
-                                  var BMB_MESSENGER_iid = '8127f208-ce2b-44c6-8146-48e391400968';
-                                                 var BMB_MESSENGER_pid = '';     </script>  -->
-<!--     <script> 
-      var BMB_BOT_domain = 'https://chatbot.loca.lt/'; 
-      var BMB_BOT_botHTMLPath = BMB_BOT_domain + 'index.html'; 
-      var BMB_BOT_head = document.getElementsByTagName('head')[0]; 
-      var BMB_BOT_script = document.createElement('script'); 
-      BMB_BOT_script.type = 'text/javascript'; 
-      BMB_BOT_script.src = BMB_BOT_domain + 'chatplugin.js'; 
-      BMB_BOT_head.appendChild(BMB_BOT_script); 
-      var BMB_BOT_gid = '73574010-2f33-4b41-8b8a-09d18b025a56'; 
-    var BMB_BOT_iid = '2ddcb06d-8a79-46dc-ab38-367080ca3f78'; 
-    var BMB_BOT_pid = ''; 
-  </script> -->
-<!-- <script>
-    (function (c, s, q, u, a, r, e) {
-    c.hj=c.hj||function(){(c.hj.q=c.hj.q||[]).push(arguments)};
-    c._hjSettings = { hjid: a };
-    r = s.getElementsByTagName('head')[0];
-    e = s.createElement('script');
-    e.async = true;
-    e.src = q + c._hjSettings.hjid + u;
-    r.appendChild(e);
-})(window, document, 'https://static.hj.contentsquare.net/c/csq-', '.js', 5293072);
-
-</script> -->
-<!--  <script>
-
-        function openMessenger() {
-            console.log('button clicked')
-         if (typeof hj === 'function') {
-        hj('track', 'chat_button_click'); // Custom event name
-    }
-            if (!document.getElementById('messengeriframe')) {
-                var head = document.getElementsByTagName('head')[0];
-                
-                var scriptTag = document.createElement('script');
-                scriptTag.type = 'text/javascript';
-                scriptTag.textContent = `
-                      var BMB_MESSENGER_domain = 'https://messengerchat.loca.lt/';
-    var BMB_messengerHTMLPath = BMB_MESSENGER_domain + 'index.html';
-    var BMB_MESSENGER_head = document.getElementsByTagName('head')[0];
-    var BMB_MESSENGER_script = document.createElement('script');
-    BMB_MESSENGER_script.type = 'text/javascript';
-    BMB_MESSENGER_script.src = BMB_MESSENGER_domain + 'msgplugin.js';
-    BMB_MESSENGER_head.appendChild(BMB_MESSENGER_script);
-    var BMB_MESSENGER_gid = '73574010-2f33-4b41-8b8a-09d18b025a56';
-    var BMB_MESSENGER_iid = '0cfb30f2-cfba-4161-9ae8-a25ec3ddf77d'; 
-                    var BMB_MESSENGER_pid = '';
-                    var BMB_MESSENGER_buttonscript = true;
-           
-                   
-
-                `;
-                
-                head.appendChild(scriptTag);
-            } else {
-               
-                document.getElementById("messengeriframe").contentWindow.postMessage("msgwindowOpened", "*");
-            }
-        }
-        
-    </script> -->
-
- 
    
 </head>
 
 <body>
-
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N68KFVDJ"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
-  Navigation Bar starts---->
 
     <nav class="navbar navbar-expand-md navbar-dark navbar-style">
         <div class="container">
@@ -233,12 +106,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <h4>This is heading 4</h4>
     <h5>This is heading 5</h5>
     <h6>This is heading 6</h6>
-
-      
-                <button class="chat-btn-container"  onclick="openMessenger()  ">Chat</button>
-
-          
-     
+ 
+    <button class="chat-btn-container"  onclick="openMessenger()  ">Chat</button>
 
     </div>
  
